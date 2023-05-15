@@ -1,0 +1,563 @@
+.head1{
+    display:flex;
+    cursor: pointer;
+}
+
+.head1 p{
+    padding: 10px;
+}
+
+
+.head3{
+    display: flex;
+    justify-content: space-between;
+}
+.head2{
+    margin-right: 15px;
+}
+
+.head2 img{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.line{
+    width:100%;
+    border: solid 1px rgb(244, 235, 68);
+}
+
+.head4{
+    display: flex;
+    justify-content: center;
+}
+
+#font{
+    font-family:font;
+    font-size: 30px;
+}
+#font::first-letter{
+    color: red;
+}
+
+@font-face{
+    font-family: font;
+    src: url("/style/font1/YamakaPersonalUsed-VGrrx.otf");
+}
+
+.line2{
+    width: 10px;
+    height: 10px;
+    border: solid 2px rgb(244, 235, 68);
+    margin-top: 37px;
+    background-color: rgb(244, 235, 68);
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.search input{
+    border: solid 4px rgb(244, 235, 68);
+    background-color: #c3c4c7;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto;
+    padding: 15px;
+    column-gap: 20px;
+    row-gap: 5px;
+}
+
+
+.griditem{
+    background-color:#f6f7f7;
+    border: 0px solid rgb(0, 0, 0, 0.8);
+    padding: 12px;
+    font-size: 17px;
+    text-align: center;
+    font-family:serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.griditem::first-letter{
+    color: red;
+    font-size: 20px;
+}
+
+.griditem:hover{
+    background-color: #cbcdd5;
+    transition: background 2s;
+}
+
+.shop{
+    display: flex;
+    justify-content: end;
+}
+
+.shop img{
+    padding: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.ganlageba{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container1{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 5px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.grid-container1 img{
+    border: solid 1px black;
+    border-radius: 15px;
+}
+
+.top {
+    position: absolute;
+    left: 16px;
+    margin-top: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .top:hover{
+    color: rgb(92, 87, 87);
+  }
+
+  .top1 {
+    position: absolute;
+    margin-top: 330px;
+    left: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    cursor: pointer
+  }
+  .top1:hover{
+    color: rgb(92, 87, 87);
+  }
+
+  .top2 {
+    position: absolute;
+    margin-top: 520px;
+    left: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .top2:hover{
+    color: rgb(92, 87, 87);
+  }
+
+.img2{
+    position: fixed;
+    top: 90px;
+    
+}
+
+
+.img2 img{
+    display: block;
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.img2 img:hover{
+    margin-left: 15px;
+    width: 26px; height: 26px;
+    transition: margin-left 1s;
+}
+
+#satauri::first-letter{
+    color: red;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#paragaph::selection{
+    color: rgb(221, 124, 124);
+    background-color:rgb(92, 87, 87); 
+}
+
+.brand{
+    width: 250px;
+    margin: 30px;
+}
+.brand img{
+    border: solid 2px black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.brand img:hover{
+    transform: scale(1.05);
+   transition: transform 1s;
+}
+
+.brand2{
+    display: flex;
+    justify-content: center;
+}
+
+.brand2 p{
+    text-align: center;
+    font-family:serif ;
+}
+
+.line3{
+    width:100%;
+    border: solid 1px rgb(244, 235, 68);
+}
+
+.mainbuy{
+    display: flex;
+    justify-content: center;
+}
+
+.mainbuy img{
+    border: solid 2px black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.mainbuy img:hover{
+   transform: scale(1.05);
+   transition: transform 1s;
+   
+}
+
+.mainbuy div{
+    margin: 20px;
+}
+
+.buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainbuy button{
+    background-color:rgb(244, 235, 68);
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border: solid 0px black;
+}
+
+.mainbuy button:hover{
+    background-color: black;
+    color: white;
+    transition: background 1s, color 1s;
+}
+
+
+#mostsale{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#mostsale::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+.mainbuy2{
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+.mainbuy2 img{
+    cursor: pointer;
+}
+.mainbuy2 img:hover{
+    transform: scale(1.05);
+   transition: transform 1s;
+}
+.mainbuy2 div{
+    margin: 25px;
+}
+
+.buy2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainbuy2 button{
+    background-color:rgb(244, 235, 68);
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border: solid 0px black;
+}
+
+.mainbuy2 button:hover{
+    background-color: black;
+    color: white;
+    transition: background 1s, color 1s;
+}
+
+#xazi{
+    text-decoration: line-through;
+}
+
+#witelixazi{
+    color: red;
+    font-size: 20px;
+}
+
+
+.wertili{
+    display: flex;
+    justify-content: center;
+}
+
+.infofull{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.info{
+    width:1200px ;
+    height:220px ;
+    border-radius: 15px;
+    background:  #d13d3d;
+    display: flex;
+    justify-content:center ;  
+    
+}
+
+.info1{
+    width: 250px;
+    margin: 30px;
+}
+
+.info1 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.info1 img{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foter1{
+   
+    background-color:#3f5599;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 15px;
+    column-gap:200px;
+   
+    
+    
+    
+}
+
+
+#pay{
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.information img{
+    border: solid 2px black;
+    
+}
+
+.information a{
+    text-decoration: none;
+    color: black;
+}
+
+.information a:hover{
+    color:hsl(57, 41%, 55%);
+    transition: color 0.5s;
+}
+
+
+.azri{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.azri input{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+}
+
+.azri button{
+    cursor: pointer;
+}
+
+.azri button:hover{
+    color: black;
+    background-color: rgb(244, 235, 68);
+    transition: background 2s, color 2s;
+}
+
+.send input{
+    border-radius: 15px;
+    border: solid 2px black;
+}
+
+.send button{
+    border-radius: 15px;
+    border: solid 2px black;
+}
+
+
+
+
+#bigimg{
+    height: 550px;
+    width: 1200px;
+}
+
+
+.slidershow{
+    width: 1200px;
+    height: 550px;
+    overflow: hidden;
+    margin-left: 15px;
+    
+}
+
+
+
+.navigation{
+    position: absolute;
+    top:105%;
+    transform: translateX(130%);
+    
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+.slides input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

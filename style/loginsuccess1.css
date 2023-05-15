@@ -1,0 +1,205 @@
+.head1{
+    display:flex;
+    cursor: pointer;
+}
+
+.head1 p{
+    padding: 10px;
+}
+
+
+.head3{
+    display: flex;
+    justify-content: space-between;
+}
+.head2{
+    margin-right: 15px;
+}
+
+.head2 img{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.line{
+    width:100%;
+    border: solid 1px rgb(244, 235, 68);
+}
+
+.head4{
+    display: flex;
+    justify-content: center;
+}
+
+#font{
+    font-family:font;
+    font-size: 30px;
+}
+#font::first-letter{
+    color: red;
+}
+
+@font-face{
+    font-family: font;
+    src: url("/style/font1/YamakaPersonalUsed-VGrrx.otf");
+}
+
+.line2{
+    width: 10px;
+    height: 10px;
+    border: solid 2px rgb(244, 235, 68);
+    margin-top: 37px;
+    background-color: rgb(244, 235, 68);
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.search input{
+    border: solid 4px rgb(244, 235, 68);
+    background-color: #c3c4c7;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto;
+    padding: 15px;
+    column-gap: 20px;
+    row-gap: 5px;
+}
+
+
+.griditem{
+    background-color:#f6f7f7;
+    border: 0px solid rgb(0, 0, 0, 0.8);
+    padding: 12px;
+    font-size: 17px;
+    text-align: center;
+    font-family:serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.griditem::first-letter{
+    color: red;
+    font-size: 20px;
+}
+
+.griditem:hover{
+    background-color: #cbcdd5;
+    transition: background 2s;
+}
+
+.shop{
+    display: flex;
+    justify-content: end;
+}
+
+.shop img{
+    padding: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+#yello{
+    background-color: rgb(244, 235, 68);
+}
+
+
+main h1{
+    text-align: center;
+    text-shadow: 2px 2px;
+    font-size: 50px;
+}
+
+
+
+.foter1{
+   
+    background-color:#3f5599;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 15px;
+    column-gap:200px;
+   
+    
+    
+    
+}
+
+
+#pay{
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.information img{
+    border: solid 2px black;
+    
+}
+
+.information a{
+    text-decoration: none;
+    color: black;
+}
+
+.information a:hover{
+    color:hsl(57, 41%, 55%);
+    transition: color 0.5s;
+}
+
+
+.azri{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.azri input{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+}
+
+.azri button{
+    cursor: pointer;
+}
+
+.azri button:hover{
+    color: black;
+    background-color: rgb(244, 235, 68);
+    transition: background 2s, color 2s;
+}
+
+
+.send input{
+    border-radius: 15px;
+    border: solid 2px black;
+}
+
+.send button{
+    border-radius: 15px;
+    border: solid 2px black;
+}
+
+
