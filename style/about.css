@@ -125,11 +125,44 @@
 }
 
 
+.aboutImg{
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+}
+
+.aboutImg2{
+    width: 350px;
+}
+
+.aboutimg2 img{
+    border: solid 2px black;
+    cursor: pointer;
+}
+
+.aboutimg2 img:hover{
+    transform: scale(1.05);
+    transition: transform 2s;
+    border: dashed 2px red;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 main{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    background-color: rgb(143, 200, 200);
 }
 
 main li::first-letter{
