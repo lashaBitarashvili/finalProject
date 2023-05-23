@@ -124,10 +124,14 @@
     background-color: rgb(244, 235, 68);
 }
 
+main{
+    background-color: rgb(143, 200, 200);;;
+}
+
 .contact3{
     display: flex;
     justify-content: center;
-    background-color: rgb(40, 40, 101);
+    background-color: rgb(143, 200, 200);;
     width: 100%;
     height: 300px;
     border-radius: 30px;
@@ -140,8 +144,23 @@
     height: 200px;
     background-color: white;
     margin-top: 30px;
-    border: solid 2px rgb(244, 235, 68);
+    border: solid 2px ;
     text-align: center;
+    border-radius: 30px;
+    background-color: #d3e7e7; 
+    cursor: pointer;
+}
+
+.contact2:hover{
+    background-color: #6878a8;
+    transform: scale(1.03);
+    transition: transform 1s, background 2s;
+    transform: rotate(5deg);
+    transform: skewy(5deg);
+}
+
+.contact2 img{
+    margin-top: 15px;
 }
 
 .contactfull{
@@ -159,11 +178,13 @@
 .contactname input{
    padding: 10px;
    width: 300px;
+   border-radius: 30px;
 }
 
 .contactemail input{
     padding: 10px;
     width: 300px;
+    border-radius: 20px;
  }
  
 
@@ -171,6 +192,9 @@
     padding: 10px;
     width: 300px;
     height: 100px;
+    border-radius: 20px;
+    text-align:center;
+    
  }
  
 #sub{
@@ -178,18 +202,29 @@
     height: 40px;
     cursor: pointer;
     margin-left: 80px;
+    border-radius: 20px;
 }
 
 #sub:hover{
-    background-color: rgb(244, 235, 68);;
-    transition: background 2s, color 2s;
+    background-color: rgb(74, 213, 46);;
+    transition: background 2s, color 2s, transform 2s;
+    transform:scale(1.05);
 }
 
 .background{
-    background-color: rgb(40, 40, 101);
+    background-color: rgba(90,164,176,1) ;
     margin-left: 500px;
     margin-right: 500px;
-    height: 400px;
+    height: 500px;
+    border-radius: 20px;
+    border: dashed 3px black;
+}
+
+
+#texts{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
 }
 
 
@@ -198,6 +233,7 @@
 
 main h1{
     text-align: center;
+    color: white;
 }
 
 .socialmedia{
@@ -273,7 +309,17 @@ main h1{
 
 
 
+#georgia{
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transform: skewY(5deg);
+    cursor: pointer;
+}
 
+#georgia:hover{
+    transform: skew(-10deg);
+    transition: transform 2s;
+}
 
 
 
