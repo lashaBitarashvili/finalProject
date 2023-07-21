@@ -31,7 +31,7 @@
         </nav>
         
         <nav class="search">
-            <input placeholder="Search..." >
+            <input placeholder="Search..."  type="text" id="userInput" title="Search by name" onkeyup="searchContact()" >
         </nav>
         
         <nav class="shop">
@@ -39,53 +39,48 @@
             <img width="25px" height="25px" src="fonts\bag-shopping-solid.svg" alt="2">
         </nav>
         
-        <nav class="grid-container">
-            <a class="griditem" href="index.html">Home </a>
-            <a class="griditem" href="about.html">About</a>
-            <a class="griditem" href="galery.html">Galery</a>
-            <a class="griditem"href="contact.html">Contact</a>
-            <a class="griditem" href="service.html">Service </a>
-            <a class="griditem" href="loginsuccess.html">Authorization <img width="25px" height="25px" src="fonts\check-solid (1).svg" alt=""></a>
+        <nav id="grid-container">
+          
+            <li> <a class="griditem" href="index.html">Home </a></li>
+            <li><a class="griditem" href="about.html">About</a></li>
+            <li> <a class="griditem" href="galery.html">Galery</a></li>
+            <li>  <a class="griditem"href="contact.html">Contact</a></li>                    <li> <a class="griditem" href="service.html">Service </a></li>
+            <li>  <a class="griditem" href="loginsuccess.html">Authorization <img width="25px" height="25px" src="fonts\check-solid (1).svg" alt=""></a></li>
+            <li> <a class="griditem" href="/registration.html">Registration</a></li>
+       
         </nav>
 
-        <nav class="ganlageba">
-            <div class="slidershow middle">
-                <div class="slides">
-                 <input type="radio"  name="r" id="r1" checked >
-                 <input type="radio"  name="r" id="r2" >
-                 <input type="radio"  name="r" id="r3" >
-                 <input type="radio"  name="r" id="r4" >
-                 <input type="radio"  name="r" id="r5" >
-                 <div class="slide s1">
-                     <img width="1200px" height="550px" src="https://media.gettyimages.com/id/163391550/photo/young-child-tying-shoe-laces-with-colourful-socks.jpg?s=612x612&w=0&k=20&c=WFIErdQuYZPGKJ-h0bB-FofTNNcG3NnLpT63p8gSQ6A=" alt="1">
-                 </div> 
-     
-                 <div class="slide">
-                     <img  width="1200px" height="550px" src="https://ease.ge/wp-content/uploads/2021/04/170969351_237216194810852_4670884236658951686_n-1024x768.jpg" alt="1">
-                 </div>
-     
-                 <div class="slide">
-                     <img  width="1200px" height="550px" src="https://ease.ge/wp-content/uploads/2021/03/9c7f8-16170328851220-800-1.jpg" alt="1">
-                 </div>
-     
-                 <div class="slide">
-                     <img  width="1200px" height="550px" src="https://ease.ge/wp-content/uploads/2021/02/152935676_134853461774909_460710433493034052_n.jpg" alt="1">
-                 </div>
-     
-                 <div class="slide">
-                     <img  width="1200px" height="550px" src="https://ease.ge/wp-content/uploads/2021/02/3a115ffe45ad1ffe799e13115e0458cd.png" alt="1">
-                 </div>
-                </div>
-     
-                <div class="navigation">
-                 <label for="r1" class="bar"></label>
-                 <label for="r2" class="bar"></label>
-                 <label for="r3" class="bar"></label>
-                 <label for="r4" class="bar"></label>
-                 <label for="r5" class="bar"></label>
-                </div>
-             </div>
-        
+        <div class="slideshow-container">
+
+            <div class="myPicturers fade">
+                <div class="textNumber"> 1 / 3 </div>
+                <img style="width: 100%; height: 500px;" src="https://media.gettyimages.com/id/163391550/photo/young-child-tying-shoe-laces-with-colourful-socks.jpg?s=612x612&w=0&k=20&c=WFIErdQuYZPGKJ-h0bB-FofTNNcG3NnLpT63p8gSQ6A=">
+            </div>
+
+            <div class="myPicturers fade">
+                <div class="textNumber"> 2 / 3 </div>
+                <img style="width: 100%; height: 500px;" src="https://ease.ge/wp-content/uploads/2021/02/152935676_134853461774909_460710433493034052_n.jpg">
+               
+            </div>
+
+            <div class="myPicturers fade">
+                <div class="textNumber"> 3 / 3 </div>
+                <img style="width: 100%; height: 500px;" src="https://ease.ge/wp-content/uploads/2021/03/9c7f8-16170328851220-800-1.jpg">
+                
+            </div>
+
+            <a class="previous" onclick="moveSlides(-1)">&#60;</a>
+            <a class="next" onclick="moveSlides(1)">&#62;</a>
+
+
+
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
 
 
 
@@ -93,17 +88,6 @@
 
 
 
-
-
-        <nav class="grid-container1">
-            <nav class="top">კაცი</nav>
-            <nav class="top1">ქალი</nav>
-            <nav class="top2">ბავშვი</nav>
-            <img  width="300px" height="182px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi_umFfP3-_TKsLPs268mX1DcBUctBTMCAjA&usqp=CAU" alt="1">
-            <img width="300px" height="182px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhScBOQxQqOrctkja1aDSyeIgt9MA5FTnGR1iTStzTjMG47RkRgHiOIJ7pvsCzqCi8ZMw&usqp=CAU" alt="1">
-            <img width="300px" height="182px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPb9KTbCLD9XLXFHXdrzcoz7M1M3nljKpxA&usqp=CAU" alt="1">
-        </nav>
-    </nav>
 
     <nav class="img2">
         <img width="22px" height="22px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" alt="1">
@@ -113,34 +97,52 @@
     </nav>
         </header>
 
+
         <main>
             <h2 id="satauri" style="text-align: center;">ქართული ფეხსაცმლის მაღაზია, რომელიც ოფიციალურად წარმოადგენს სხვადასხვა ბრენდის მოდელებს საქართველოში:</h2>
             
+
+
+
+
         <div class="brand2">
-            
+         
             <div class="brand">
                   <img width="250px" height="150px" src="https://kedi.ge/wp-content/uploads/elementor/thumbs/adidas-plv1fcv9vtr41n9au4o531exlin3sla2wvsybgqcxs.png" alt="1">
-                  <p id="paragaph">კომპანია ადიდასი (Adidas), როგორც ცნობილია, წარმოადგენს გერმანულ მსოფლიოში ერთ–ერთ უმსხვილეს სპორტულ ბრენდს. მისი დამფუძნებელია ადოლფ დასლერი.</p>
-            </div>
+                  <p class="text">კომპანია ადიდასი (Adidas), როგორც ცნობილია, წარმოადგენს გერმანულ მსოფლიოში ერთ–ერთ უმსხვილეს სპორტულ ბრენდს. მისი დამფუძნებელია ადოლფ დასლერი.
+                  <span class="moreText">დღესდღეობით ჩვენ ვიცნობთ ამ ბრენდს, როგორც New balance- რომელმაც მიაღწია წარმოუდგენელ წარმატებას ერთი ჭკვიანი ადამიანის და უბრალო ქათმის დახმარებით</span>
+                </p>
+                <button class="read-more-btn">Read More</button>
+                </div>
+           
+
+
+
+
 
             <div class="brand">
                   <img width="250px" height="150px" src="https://kedi.ge/wp-content/uploads/elementor/thumbs/new-balance-plv1gqopy1nb4z8xr87d96ud2xtk4jrurqdor4ohs0.png" alt="1">
-                  <p id="paragaph">დღესდღეობით ჩვენ ვიცნობთ ამ ბრენდს, როგორც New balance- რომელმაც მიაღწია წარმოუდგენელ წარმატებას ერთი ჭკვიანი ადამიანის და უბრალო ქათმის დახმარებით</p>
+                  <p class="text">დღესდღეობით ჩვენ ვიცნობთ ამ ბრენდს, როგორც New balance- რომელმაც მიაღწია წარმოუდგენელ წარმატებას ერთი ჭკვიანი ადამიანის და უბრალო ქათმის დახმარებით
+                  <span class="moreText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio dolorum vel velit placeat fugit, nemo laborum commodi repellendus necessitatibus animi adipisci laboriosam maxime laudantium aliquam perferendis quo officiis veritatis blanditiis!</span></p>
+                  <button class="read-more-btn">Read More</button>
             </div>
 
                 <div class="brand">
                     <img width="250px" height="150px" src="https://kedi.ge/wp-content/uploads/elementor/thumbs/puma-plv1gug2pdsgff3h59tvj5w7ghb0zc6s48zmo8ix34.png" alt="1">
-                    <p id="paragaph">გერმანული ცნობილი კომპანიის პუმას ( Puma) ისტორია იწყება იმავე დროიდან, საიდანაც ასევე უდიდესი კომპანიის – ადიდასის – 1920 – იანი წლებიდან. პუმას ისტორია უაღრესად საინტერესოა.</p>
-                    </div>            
+                    <p id="paragaph">გერმანული ცნობილი კომპანიის პუმას ( Puma) ისტორია იწყება იმავე დროიდან, საიდანაც ასევე უდიდესი კომპანიის – ადიდასის – 1920 – იანი წლებიდან. პუმას ისტორია უაღრესად.</p>
+                    <button class="read-more-btn">Read More</button>    
+                </div>            
 
                 <div class="brand">
                     <img width="250px" height="150px" src="https://kedi.ge/wp-content/uploads/elementor/thumbs/reebok-plv1gx9l9vwbe8zdot1r8n6l8mx4mfhz4my342eqkg.png" alt="1">
-                    <p id="paragaph">Reebok-მა გააფორმა სალიცენზიო ხელშეკრულებები NBA-სთან 1986 წელს. კალათბურთის ფეხსაცმლის გაუმჯობესების მცდელობისა და Nike Air სერიის ღირსეული კონკურენტი გამხდარიყო</p>
+                    <p id="paragaph">Reebok-მა გააფორმა სალიცენზიო ხელშეკრულებები NBA-სთან 1986 წელს. კალათბურთის ფეხსაცმლის გაუმჯობესების მცდელობისა და Nike Air სერიის ღირსეული კონკურენტი</p>
+                    <button class="read-more-btn">Read More</button> 
                 </div>
 
                 <div class="brand">
                     <img width="250px" height="150px" src="https://kedi.ge/wp-content/uploads/elementor/thumbs/the-north-face-1-plv0vo4yqqswvnursmbfv09dozockt4gvfwugtx79c.png" alt="1">
                     <p id="paragaph">სინამდვილეში, The North Face-ის შექმნის იდეა იყო, რომ გარე გულშემატკივრებს მიეცათ შესაძლებლობა ეყიდათ მაღალი ხარისხის გარე აღჭურვილობა სხვაგან.</p>
+                    <button class="read-more-btn">Read More</button> 
                 </div>        
         </div>        
             
@@ -430,10 +432,14 @@
 
     
 
+    
+
    </footer>
 
       
 
-
+   <script type="text/javascript" src="/scripts/slider.js"></script>
+   <script type="text/javascript" src="/scripts/readmore.js" ></script>
+   <script type="text/javascript" src="/scripts/filter.js" ></script>
     </body>
 </html>
