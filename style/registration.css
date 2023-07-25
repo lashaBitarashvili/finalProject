@@ -466,6 +466,60 @@
 }
 
 
+form{
+    border: solid 2px;
+    border-radius: 30px;
+    padding: 50px;
+    background-color: #6d7490;
+}
+
+#firstname{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#lastname{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#username{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#password{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#email{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#register{
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+#register:hover{
+    background-color: green;
+}
+
+
+main{
+    background-color: rgb(162, 210, 210);
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 

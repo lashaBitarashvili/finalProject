@@ -64,22 +64,28 @@
      
 
         <form>
-            <input id="firstName" type="text" placeholder="Enter your name">
+            <input id="firstName" type="text" placeholder="Enter your name" onchange="firstNameCheker()" required >
             <br>
             <br>
-            <input id="lastName" type="text" placeholder="Enter your last name">
+            <input id="lastName" type="text" placeholder="Enter your last name" onchange="lastNameCheker()" required>
             <br>
             <br>
-            <input id="username" type="text" placeholder="Enter your username">
+            <input id="userName" type="text" placeholder="Enter your username" onchange="usernameCeker()" required >
             <br>
             <br>
-            <input id="password" type="text" placeholder="Enter your password">
+            <input type="text" id="password" placeholder="Enter your password" onchange="passwordChecker()" required>
             <br>
             <br>
-            <button onclick="handleRegistration()" type="submit">Register now</button>
+            <input type="text" id="email" placeholder="Enter your email" onchange="emailChecker()" required>
+            <br>
+            <br>
+            <button id="register" onclick="handleRegistration()" type="submit">Register now</button>
+            
         </form>
 
         <script type="text/javascript" src="scripts/registration.js"></script>
+
+        
     
  
 
@@ -97,7 +103,7 @@
 
         
 
-   <footer>
+   <!-- <footer>
     
     <div class="foter1">
 
@@ -161,10 +167,11 @@
 
     
 
-   </footer>
+   </footer> -->
 
       
 
-   
+   <!-- <script type="text/javascript" src="/scripts/slider.js"></script>
+   <script type="text/javascript" src="/scripts/readmore.js" ></script> -->
     </body>
 </html>
